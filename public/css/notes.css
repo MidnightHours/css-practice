@@ -1,0 +1,138 @@
+* {
+    color: rgb(36, 33, 33);
+}
+
+:root {
+    background: black;
+}
+
+em {
+    color:blue
+}
+
+.class_name_selector {
+    color: purple;
+}
+
+#id_selector {
+    color: aqua;
+}
+
+/* Використання декількох селекторів - через кому */
+.class_name_selector, #id_selector {
+    background: gray;
+}
+
+.daughter_selector div > span {
+    background: blue;
+}
+
+section span {
+    color: red;
+}
+
+.sister_selector h1 + p {
+    background: yellow;
+}
+
+.neighbor_selector h1 ~ span {
+    background: yellow;
+}
+
+/* ------------------------------------------------------------ */
+
+.first_child p:first-child {
+    color: red
+}
+
+.last_child p:last-child {
+    color: red
+}
+
+.only_child p:only-child {
+    background: yellow;
+}
+
+.first_type p:first-of-type {
+    background: yellow;
+}
+
+.last_type p:last-of-type {
+    background: yellow;
+}
+
+.only_type span:only-of-type {
+    background: yellow;
+}
+
+.nth_child p:nth-child(3) {
+    background: yellow;
+}
+
+.nth_child p:nth-child(even) {
+    background: blueviolet;
+}
+
+.nth_child p:nth-child(2n+1) {
+    color: red;
+}
+
+.not p:not(.not) {
+    color: blue;
+}
+
+.empty p:empty {
+    background: yellow;
+}
+
+.atr p[class] {
+    background: yellow;
+}
+
+.atr_value p[class="btn"] {
+    background: red;
+}
+
+.atr_have_value p[class~="btn-secondary"] {
+    background: blue;
+}
+
+.atr_pre p[class|=btn] {
+    background: red;
+}
+
+.atr_start p[class^=btn] {
+    background: red;
+}
+
+.atr_root p[class*=pri] {
+    background: red;
+}
+
+.atr_end p[class$=ry] {
+    background: yellow;
+}
+
+.first_letter p::first-letter {
+    color: red;
+}
+
+.first_line p::first-line {
+    background: red;
+}
+
+.placeholder input::placeholder {
+    color: red;
+}
+
+.before p::before {
+    content: ")))";
+}
+
+.after p::after {
+    content: "(((";
+}
+
+#selector-3:target {
+    background: red;
+}

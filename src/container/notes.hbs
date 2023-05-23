@@ -1,0 +1,379 @@
+<nav class="row m-4">
+    <div class="col-4">
+        <div class="card">
+            <h5 class="card-header bg-secondary text-light text-center p-3">Селектори</h5>
+            <div class="card-body d-grid gap-2">
+                <a href="#selector-1" class="btn btn-outline-secondary">Селектори ч.1</a>
+                <a href="#selector-2" class="btn btn-outline-secondary">Селектори ч.2</a>
+                <a href="#selector-3" class="btn btn-outline-secondary">Селектори ч.3</a>
+                <a href="#selector-4" class="btn btn-outline-secondary">Селектори ч.4</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="card m-4 p-3" id="selector-1">
+    <div class="display-3">Селектори (ч.1)</div>
+    <div class="card p-4 m-4">
+        <h1>*</h1>
+        <p>Глобальний селектор</p>
+    </div>
+
+    <div class="card p-4 m-4">
+        <h1>:root</h1>
+        <p>Вибирає абстрактний кореневий тег, в якому вже знаходиться інший HTML код</p>
+    </div>
+
+    <div class="card p-4 m-4">
+        <h1>h1</h1>
+        <p>Селектор тегу</p>
+        <em>Test</em>
+    </div>
+
+    <div class="card p-4 m-4">
+        <h1 class="class_name_selector">.class_name</h1>
+        <p>Селектор класу</p>
+    </div>
+
+    <div class="card p-4 m-4">
+        <h1 id="id_selector">#id</h1>
+        <p>Селектор індифікатора</p>
+    </div>
+
+    <div class="card p-4 m-4">
+        <div class="daughter_selector">
+            <div>
+                <h1>></h1>
+                <p>Дочірній селектор</p>
+                <span>test</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card p-4 m-4">
+        <section>
+            <div>
+                <h1>>> / space</h1>
+                <p>Селектор нащадка</p>
+                <span>test</span>
+            </div>
+        </section>
+    </div>
+
+    <div class="card p-4 m-4">
+        <div class="sister_selector">
+            <h1>+</h1>
+            <p>Сестринський селектор</p>
+            <span>test</span>
+        </div>
+    </div>
+
+    <div class="card p-4 m-4">
+        <div class="neighbor_selector">
+            <h1>~</h1>
+            <p>ССусідський селектор</p>
+            <span>test</span>
+        </div>
+    </div>
+</section>
+
+<section class="card m-4 p-3" id="selector-2">
+    <div class="display-3">Селектори (ч.2)</div>
+
+    <div class="card p-4 m-4">
+        <div>
+            <h1>:first-child</h1>
+            <p>Селектор першої дитини</p>
+            <div class="first_child">
+                <p>test</p>
+                <p>test</p>
+                <p>test</p>
+                <p>test</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card p-4 m-4">
+        <div>
+            <h1>:last-child</h1>
+            <p>Селектор останньої дитини</p>
+            <div class="last_child">
+                <p>test</p>
+                <p>test</p>
+                <p>test</p>
+                <p>test</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card p-4 m-4">
+        <div>
+            <h1>:only-child</h1>
+            <p>Селектор одиничної дитини</p>
+            <div class="only_child">
+                <p>test</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card p-4 m-4">
+        <div>
+            <h1>:first-of-type</h1>
+            <p>Селектор першого типу</p>
+            <div class="first_type">
+                <p>test</p>
+                <p>test</p>
+                <span>test span</span>
+                <p>test</p>
+                <p>test</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card p-4 m-4">
+        <div>
+            <h1>:last-of-type</h1>
+            <p>Селектор останнього типу</p>
+            <div class="last_type">
+                <p>test</p>
+                <p>test</p>
+                <span>test span</span>
+                <p>test</p>
+                <p>test</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card p-4 m-4">
+        <div>
+            <h1>:only-of-type</h1>
+            <p>Селектор одиничного типу</p>
+            <div class="only_type">
+                <p>test</p>
+                <p>test</p>
+                <span>test span</span>
+                <p>test</p>
+                <p>test</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card p-4 m-4">
+        <div>
+            <h1>:nth-child(n)/:nth-last-child(n)</h1>
+            <p>Селектор порядкової дтини/Селектор зворотньої порядкової дитини</p>
+            <div class="nth_child">
+                <p>n=число (1,2,3) - обирає ел який є першим, другим....</p>
+                <p>n=even - обрає парні</p>
+                <p>n=odd - обирає непарні</p>
+                <p>n=(3n+1)</p>
+                <p>test</p>
+                <p>test</p>
+                <p>test</p>
+                <p>test</p>
+                <p>test</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card p-4 m-4">
+        <div>
+            <h1>:not:()</h1>
+            <p>Селектор невідповідності</p>
+            <div class="not">
+                <p>test</p>
+                <p class="not">test</p>
+                <p>test</p>
+                <p>test</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card p-4 m-4">
+        <div>
+            <h1>:empty</h1>
+            <p>Селектор пустого контенту</p>
+            <div class="empty">
+                <p>test</p>
+                <p class="m-5"> </p>
+                <p>test</p>
+                <p>test</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="card m-4 p-3" id="selector-3">
+    <div class="display-3">Селектори (ч.3)</div>
+    <div class="card p-4 m-4">
+        <div>
+            <h1>[atr]</h1>
+            <p>Селектор назви атрибута</p>
+            <div class="atr">
+                <p class="card">test</p>
+                <p>test</p>
+                <p>test</p>
+                <p>test</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card p-4 m-4">
+        <div>
+            <h1>[atr="value"]</h1>
+            <p>Селектор значення атрибута</p>
+            <div class="atr_value">
+                <p class="card">test</p>
+                <p class="btn">test</p>
+                <p>test</p>
+                <p>test</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card p-4 m-4">
+        <div>
+            <h1>[atr~="value"]</h1>
+            <p>Селектор наявності значення</p>
+            <div class="atr_have_value">
+                <p class="btn btn-secondary">test</p>
+                <p>test</p>
+                <p>test</p>
+                <p>test</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card p-4 m-4">
+        <div>
+            <h1>[atr|="value"]</h1>
+            <p>Селектор префіксу значення</p>
+            <div class="atr_pre">
+                <p class="btn-info">test</p>
+                <p class="btn">test</p>
+                <p class="my-button">test</p>
+                <p class="btn btn-primary">test</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card p-4 m-4">
+        <div>
+            <h1>[atr^="value"]</h1>
+            <p>Селектор початку значення</p>
+            <div class="atr_start">
+                <p class="btn-info">test</p>
+                <p class="btn">test</p>
+                <p class="my-button">test</p>
+                <p class="btn btn-primary">test</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card p-4 m-4">
+        <div>
+            <h1>[atr*="value"]</h1>
+            <p>Селектор кореня значення</p>
+            <div class="atr_root">
+                <p class="btn-primary">test</p>
+                <p class="btn">test</p>
+                <p class="my-button">test</p>
+                <p class="btn btn-primary">test</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card p-4 m-4">
+        <div>
+            <h1>[atr$="value"]</h1>
+            <p>Селектор кінцівки значення</p>
+            <div class="atr_end">
+                <p class="btn-secondary">test</p>
+                <p class="btn primary">test</p>
+                <p class="my-button">test</p>
+                <p class="btn btn-primary">test</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card p-4 m-4">
+        <div>
+            <h1>::first-letter</h1>
+            <p>Псевдоелемент першої літери</p>
+            <div class="first_letter">
+                <p>test</p>
+                <p>test</p>
+                <div>test</div>
+                <p>test</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card p-4 m-4">
+        <div>
+            <h1>::first-line</h1>
+            <p>Псевдоелемент першого рядка</p>
+            <div class="first_line">
+                <p>test</p>
+                <p>test</p>
+                <div>test</div>
+                <p>test</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card p-4 m-4">
+        <div>
+            <h1>::placeholder</h1>
+            <p>Псевдоелемент плейсхолдера</p>
+            <div class="placeholder">
+                <input placeholder="color"></input>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card p-4 m-4">
+        <div>
+            <h1>::before</h1>
+            <p>Псевдоелемент що вказує контент, що буде йти попереду тексту</p>
+            <div class="before">
+                <p>test</p>
+                <p>test</p>
+                <div>test</div>
+                <p>test</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card p-4 m-4">
+        <div>
+            <h1>::after</h1>
+            <p>Псевдоелемент що вказує контент, що буде йти попереду тексту</p>
+            <div class="after">
+                <p>test</p>
+                <p>test</p>
+                <div>test</div>
+                <p>test</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="card m-4 p-3" id="selector-4">
+    <div class="display-3">Селектори (ч.4)</div>
+
+    <div class="card p-4 m-4">
+        <div>
+            <h1>:target</h1>
+            <p>Селектор цільового тегу</p>
+            <div class="target">
+                <a href="#selector-1">test</a>
+                <p>test</p>
+                <p>test</p>
+                <p>test</p>
+            </div>
+        </div>
+    </div>
+</section>
