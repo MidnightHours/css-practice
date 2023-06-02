@@ -148,3 +148,19 @@
     font-size: 19px;
     padding: 9px;
 }
+
+.plans_card:nth-child(2) {
+   visibility: hidden;
+}
+
+.hero_text {
+    background: gray;
+    text-align: left;
+
+    white-space: pre-line;
+
+    resize: both;
+
+    width: 200px;
+    overflow: auto;
+}
