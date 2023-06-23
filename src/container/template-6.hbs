@@ -11,23 +11,15 @@
 
 <main class="main">
 
-    {{#with messages}}
-    <div class="messages">
-        <h1 class="messages_title">{{title}}</h1>
-        {{#each list}}
-        <div class="msg">
-            <strong class="msg_name">{{name}}</strong>
-            <p class="msg_text">{{message}}</p>
-            <span class="msg_day">{{day}}</span>
-        </div>
-        {{/each}}
-        <a href="#" class="messages_link">All messages</a>
+    {{#with info}}
+    <div class="info">
+        <h1 class="info_title">{{title}}</h1>
+        <p class="info_description">{{description}}</p>
     </div>
     {{/with}}
 
     {{#with form}}
     <form class="form">
-        <h2 class="form_title">{{title}}</h2>
         <div class="form_imput_list">
             {{#each inputs}}
             <input type="{{type}}" placeholder="{{placeholder}}" name="{{name}}" id="form-input-{{id}}"
@@ -45,13 +37,39 @@
     {{/with}}
 </main>
 
-<section class="advantages">
-    {{#each advantages}}
-    <div>
-        <strong>{{title}}</strong>
-        <p>{{text}}</p>
+<section class="updates">
+    {{#with updates}}
+    <h3 class="updates_title">{{title}}</h3>
+
+    {{#each list}}
+    <div class="updates_item">
+        <div class="updates_img" style="background-image: url(https://picsum.photos/32/32);"></div>
+        <div class="updates_info">
+            <div>@{{nickname}}</div>
+            <p>{{description}}</p>
+        </div>
     </div>
     {{/each}}
+
+    <a href="{{show_all.url}}" class="updates_link">{{show_all.text}}</a>
+    {{/with}}
+</section>
+
+<section class="expirience">
+    {{#with expirience}}
+    <div>
+        <h2 class="expirience_title">{{title}}</h2>
+        <div class="expirience_badge">{{badge}}</div>
+    </div>
+    <div class="expirience_item">
+        {{#each list}}
+        <div class="expirience_info">
+            <div>{{name}}</div>
+            <p>{{details}}</p>
+        </div>
+        {{/each}}
+    </div>
+    {{/with}}
 </section>
 
 <footer class="footer">
