@@ -1,0 +1,17 @@
+<header>
+    {{#with header}}
+    <div class="header">
+        {{> logo isDark=true }}
+        {{> nav list=links }}
+    </div>
+    <div class="under_header">
+        <div class="ad">
+            {{#with ad}}
+            <div>Ad</div>
+            <a href="{{url}}">{{text}}: {{url}}</a>
+            {{/with}}
+        </div>
+        <div class="user_online">Users online: {{userOnline}}</div>
+    </div>
+    {{/with}}
+</header>
